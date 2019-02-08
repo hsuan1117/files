@@ -1,0 +1,68 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC');
+</style>
+<p id="sidebar_LoginStatus" style="font-family: 'Noto Sans TC', sans-serif;"></p>
+<div class="btn-group-sm">
+<a class="btn btn-warning" href="/p/account-set.html" id="sidebar_Login_setAccount">設定中心</a>
+  <button id="sidebar_LogoutButton" class='btn btn-danger'>登出</button></div>
+
+<div class="row btn-group-sm">
+  <button id="sidebar_RegisterButton" style="display:none;" class='btn btn-success col'>註冊</button>&nbsp;
+  <button id="sidebar_LoginButton" style="display:none;" class='btn btn-primary col'>登入</button>
+</div>
+<script>
+$(()=>{
+  $("#sidebar_LoginButton").click(()=>{
+    window.location.href=SETS$page.login
+  })
+  $("#sidebar_LogoutButton").click(()=>{
+    firebase.auth().signOut()
+    window.location.reload()
+  })
+  $("#sidebar_RegisterButton").click(()=>{
+    window.location.href=SETS$page.register
+  })
+})
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    
+    LoginedUser=user
+    if(typeof writeInfoToDOM !="undefined"){
+      //只會在帳號資料頁面執行
+      writeInfoToDOM()
+    }
+    doWriteToASdb(LoginedUser.uid)
+    if(!LoginedUser.displayName){
+      //已登入但無名字
+      $('#sidebar_LoginStatus').html(
+        `歡迎&#65281; 請至設定中心設定您的姓名&#12290;
+         \<a href="${SETS$page.setAccount}">
+         來這裡設定吧<\/a\>
+        `
+      )
+    }else{
+      //已登入且有名字
+      $('#sidebar_LoginStatus').html(
+        `歡迎&#65281; ${LoginedUser.displayName.replace(/</g,"").replace(/>/g,"")}`
+      )
+    }
+  } else {
+    $("#sidebar_LoginStatus").text("尚未登入 加入會員享有Yi's Blog各種限定服務吧")
+    $("#sidebar_Login_setAccount").hide()
+
+    $("#sidebar_LogoutButton").hide()
+    $("#sidebar_RegisterButton").show()
+    $("#sidebar_LoginButton").show()
+    if(window.pageIsAccount){
+        swal(
+              '錯誤',
+              '此頁面為帳號管理頁面,你未登入',
+              'error'
+        );
+    }
+  }
+});
+</script>
+<!--
+<p style="font-size:small;border-top:solid 1px #bec0c4;padding:2px;text-align:center;margin:5px;color:#c9d2e0;background-color:white;opacity:0.8;">
+&#169; DiaWean Blogger 帳號系統</p>-->
