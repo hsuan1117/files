@@ -1,4 +1,3 @@
-<script>
 var notificationNums=1
 $(()=>{
   //初始化 => 隱藏
@@ -196,4 +195,3 @@ function writeCoinToPage(arr,user){
   `)
    
 }
-</script>
