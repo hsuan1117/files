@@ -1,7 +1,11 @@
-# Yi's Blog[![blog](https://img.shields.io/badge/follow-blog-orange.svg)](https://jmes311chiyi.blogspot.com)
+# Cotpear [![blog](https://img.shields.io/badge/follow-blog-orange.svg)](https://www.cotpear.com)
 
-CSS and HTML that need to be restored if the blog is updated (remind administrator)
+此專案為Cotpear的檔案存檔、文件儲存頁面。
 
-若部落格更新時，所需要恢復的CSS 和HTML(提醒管理員).
+若您有任何建議，歡迎Pull requests給我們。
 
-以及其他的圖片
+順頌　時祺
+
+Cotpear
+
+此專案並不適用CC授權，除另有說明。
