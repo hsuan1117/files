@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family: Noto Sans TC}
+.info{width:95%; margin-left:2%;}
+#id_footer { height: 50px; box-sizing: border-box; position: absolute; bottom: 0; width: 95%; margin-left:2%;}
