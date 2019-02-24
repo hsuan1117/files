@@ -9,13 +9,15 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400" rel="stylesheet">
 	<link rel="icon" href="/image/LOGO-no-background.png" type="image/x-icon" />
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-	<link href="/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body style="padding-top: 70px">
+<body style="padding-top: 100px">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"> 
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" id="navbar_id"> 
 	<a class="navbar-brand" href="#">Cotpear 儲存庫</a>
   <button 
 		  class="navbar-toggler" 
@@ -28,33 +30,48 @@
 	  <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent2">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active"> 
+      <li class="nav-item"> 
 		  <a class="nav-link" href="https://www.cotpear.com">首頁<span class="sr-only">(current)</span></a> </li>
-	  <li class="nav-item active"> <a class="nav-link" href="/index.html">庫首頁 <span class="sr-only">(current)</span></a> </li>
+	  <li class="nav-item"> <a class="nav-link" href="/index.html">庫首頁 <span class="sr-only">(current)</span></a> </li>
 	  <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 儲存庫 </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="/policies/index.html">版權申告及說明</a> 
 				<a class="dropdown-item disabled" href="#">圖庫(尚未建立)</a>
 	          <!--<div class="dropdown-divider"></div>-->
 	        </div>
-          </li>
+      </li>
 		
 		
 		
 			  
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">版權申告及說明</a> <a class="dropdown-item" href="#">圖庫</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">版權申告及說明</a> <a class="dropdown-item" href="#">圖庫</a>
 	          <!--<div class="dropdown-divider"></div>-->
          </div>
-          </li>
-			<li class="nav-item dropdown"> 
-				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 封存(舊) </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> 
-				<a class="dropdown-item" href="#">2019/01/30</a>  </div>
-          </li>
         </ul>
-			<div align="right">版權申告及說明</div>
+	  隱私權政策
+	  <!--<script>
+			$(function(){
+  				var list={
+    				"/privacy":"隱私權政策"
+  				}
+  			$("#navText").text(list[location.pathname])
+			})
+		  </script>-->
   </div>
 </nav>
-<div class="info">
+	
+
+<div class="container-fluid row">
+	
+<ul class="nav flex-column col-12 col-md-3 col-xl-2 bd-sidebar">
+	<li class="nav-item">
+    <a class="nav-link disabled" href="#">封存目錄</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">2018/01/30</a>
+  </li>
+	</ul>
+<!--info -->
+<div class="col-md-10">
 <div class="separator" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em; text-align: center;">
 <span noto="" sans="" tc=""><img border="0" height="43" src="https://raw.githubusercontent.com/Cotpear/pages/master/image/LOGO-no-background.png" width="43" /> <img border="0" src="https://3.bp.blogspot.com/-e8ZA75v-Z24/W_U80Q_mj0I/AAAAAAAAIcg/yDM3cUmvwfglRJ80dRw7QBgav6DZc9iVQCK4BGAYYCw/s400/88x31.png" />  <img border="0" src="https://4.bp.blogspot.com/-UV3mXGWlxsE/W_U76tM2MnI/AAAAAAAAIcU/KSJ-N4vwK9o5KCrMHwVTOZ5GoWgKW0FsACK4BGAYYCw/s400/valid-atom.png" /></span></div>
 <div class="separator" style="clear: both; text-align: center;">
@@ -140,14 +157,15 @@ I 本站所引用之內容為:<br />
 II 本網站某些HTML程式、圖檔有連結到GitHub。<br />
 </span>
 </div>
+	</div>
 <footer id="footer">
 	<br><br><br>
   <div class="card-footer text-center text-muted"> Cotpear© 版權所有。此頁面不適用CC授權 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
 </body>
 </html>
