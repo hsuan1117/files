@@ -4,10 +4,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         window.onerror=(e)=>{alert(e)}
+        window.onload=()=>{
       $(function () {
            
                 $("#navajax").load("/nav.html",(e)=>{alert(e)});
         });
+        }
     </script>
 </head>
 <body>
