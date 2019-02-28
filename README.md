@@ -1,11 +1,26 @@
-# Cotpear [![blog](https://img.shields.io/badge/follow-blog-orange.svg)](https://www.cotpear.com)
+歡迎來到 Cotpear Pages 專案頁面！[![blog](https://img.shields.io/badge/Home(Blog)-View-%2345a1fc.svg?style=popout-square)](https://www.cotpear.com)
+=================================
 
-此專案為Cotpear的檔案存檔、文件儲存頁面。
+這裡都是存放我們網站資料的地方，用於：
 
-若您有任何建議，歡迎Pull requests給我們。
+-   封存內容(某些)
 
-順頌　時祺
+-   網頁資料庫
 
-Cotpear
+-   圖檔儲存庫
 
-此專案並不適用CC授權，除另有說明。
+-   測試中心
+
+-   備份
+
+-   撰寫範本
+
+以及其它更多內容！
+
+這些內容有些並不適用CC授權，你在查看這些檔案時也請注意。
+
+若您想要加入我們，歡迎聯絡我們，我們很歡迎你的到來
+
+若發現文檔出錯(Bug)，也可以 Pull 正確內容給我們。
+
+感謝你
