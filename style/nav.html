@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" id="navbar_id"> 
-    
-	<a class="navbar-brand" href="#">Cotpear 儲存庫</a>
+    <a class="navbar-brand" href="#">Cotpear 儲存庫</a>
     <button 
-		  class="navbar-toggler" 
-		  type="button" 
-		  data-toggle="collapse" 
-		  data-target="#navbarSupportedContent2" 
-		  aria-controls="navbarSupportedContent2" 
-		  aria-expanded="false" 
-		  aria-label="Toggle navigation"> 
-    <span class="navbar-toggler-icon"></span> </button>
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent2" 
+            aria-controls="navbarSupportedContent2" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent2">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="https://www.cotpear.com">首頁<span class="sr-only">(current)</span></a> </li>
-	    <li class="nav-item active"> <a class="nav-link" href="/index.html">庫首頁 <span class="sr-only">(current)</span></a> </li>
-		<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item active"><a class="nav-link" href="https://www.cotpear.com">首頁<span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="/index.html">庫首頁 <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           儲存庫
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/policies/index.html">版權申告及說明</a>
-          <a class="dropdown-item disabled" href="#">圖庫(尚未建立)</a>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/policies/index.html">版權申告及說明</a>
+            <a class="dropdown-item disabled" href="#">圖庫(尚未建立)</a>
         </div>
-      </li>
+            </li>
         </ul>
-	    <div id="navText"></div>
-	  <script>
-			$(function(){
-  				var list={
-    				"/policies/index.html":"隱私權政策"
-  				}
-  			$("#navText").text(list[location.pathname])
-			})
-		  </script>
-  </div>
+        <div id="navText"></div>
+        <script>
+            $(function(){
+                var list={
+                    "/policies/index.html":"隱私權政策",
+                    "/index.html":"儲存庫首頁"
+                }
+                $("#navText").text(list[location.pathname])
+            })
+        </script>
+    </div>
 </nav>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
