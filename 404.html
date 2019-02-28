@@ -15,7 +15,19 @@ permalink: /404.html
 
 <body>
 <font face="Noto Sans TC">
-<nav class="navbar-expand-lg navbar-light bg-light"><br /><div style="text-align: center;"><a class="navbar-brand" href="https://cotpear.com" style="color:black"><font size="5">Cotpear 檔案存檔</font></div></a><br /></nav>
+<div id="navajax"></div>
+<script>
+	window.onerror=(e)=>{alert(e)}
+        window.onload=()=>{
+        $(function () {
+                $("#navajax").load("/nav.html",
+                  (e)=>{
+                   // alert(e)
+                  }
+               );
+        });
+    }  
+</script>
 <div class="jumbotron">
   <h1 class="display-4">錯誤！</h1>
   <p class="lead">似乎無法查詢到此頁面，請確認您的權限、網址是否有誤。</p>
