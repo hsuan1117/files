@@ -9,45 +9,44 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <link rel="icon" href="/image/LOGO-no-background.png" type="image/x-icon" />
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="/style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="padding-top: 70px">
-<div class="card text-center info">
-  <font size="+1"><div class="card-header"> 歡迎！ </div></font>
-  <div class="card-body">
-		<font size="+2">
-    	<h5 class="card-title">歡迎您存取 Cotpear 儲存庫</h5>
-		<p class="card-text">
-			請您使用上方導覽列之連結進行資料查閱<br>
-			每頁面的授權方式皆以該頁面說明為準<br>
-	  </font>
-		<h5 class="card-title">如有疑問，請與Cotpear聯絡</h5>
-	  	</p>
-	  	
-  </div>
-</div>
-<footer id="footer">
-	<br><br><br>
-  <div class="card-footer text-center text-muted"> Cotpear© 版權所有。此頁面不適用CC授權 </div>
-</footer>
-
-<div id="navajax"></div>
-<script>
-	window.onerror=(e)=>{alert(e)}
+    <div class="card text-center info">
+        <font size="+1"><div class="card-header"> 歡迎！ </div></font>
+        <div class="card-body">
+            <font size="+2">
+                <h5 class="card-title">歡迎您存取 Cotpear 儲存庫</h5>
+                <p class="card-text"
+                   >請您使用上方導覽列之連結進行資料查閱<br>
+                    每頁面的授權方式皆以該頁面說明為準<br>
+                </p>
+            </font>
+            <h5 class="card-title">如有疑問，請與Cotpear聯絡</h5>
+            
+	  	</div>
+    </div>
+    <footer id="footer">
+        <br><br><br>
+        <div class="card-footer text-center text-muted"> Cotpear© 版權所有。此頁面不適用CC授權 </div>
+    </footer>
+    <div id="navajax"></div>
+    <script>
+        window.onerror=(e)=>{alert(e)}
         window.onload=()=>{
-        $(function () {
+            $(function () {
                 $("#navajax").load("/nav.html",
-                  (e)=>{
-                   // alert(e)
-                  }
-               );
-        });
-    }  
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                                   (e)=>{
+                    // alert(e)
+                }
+                                  );
+            });
+        }  
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
