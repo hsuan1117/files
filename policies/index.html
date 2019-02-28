@@ -18,16 +18,16 @@
 <body style="padding-top: 100px">
     <div id="navajax"></div>
     <script>
-	   window.onerror=(e)=>{alert(e)}
-            window.onload=()=>{
-            $(function () {
-                    $("#navajax").load("/style/nav.html",
-                    (e)=>{
-                    // alert(e)
-                    }
-                );
-            });
-        }  
+        window.onerror=(e)=>{alert(e)}
+        window.onload=()=>{
+        $(function () {
+                $("#navajax").load("/nav.html",
+                  (e)=>{
+                   // alert(e)
+                  }
+               );
+        });
+    }  
     </script>
     <div class="container-fluid row">
         <ul class="nav flex-column col-12 col-md-3 col-xl-2 bd-sidebar">

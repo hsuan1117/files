@@ -17,17 +17,17 @@ permalink: /404.html
 <body>
 <div id="navajax"></div>
 <script>
-	window.onerror=(e)=>{alert(e)}
+        window.onerror=(e)=>{alert(e)}
         window.onload=()=>{
         $(function () {
-                $("#navajax").load("/style/nav.html",
+                $("#navajax").load("/nav.html",
                   (e)=>{
                    // alert(e)
                   }
                );
         });
     }  
-</script>
+    </script>
 <div class="jumbotron">
   <h1 class="display-4">錯誤！</h1>
   <p class="lead">似乎無法查詢到此頁面，請確認您的權限、網址是否有誤。</p>
