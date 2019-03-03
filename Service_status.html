@@ -15,25 +15,21 @@
 	<link href="/style/style.css" rel="stylesheet" type="text/css">
 </head>
 <body style="padding-top: 60px">
-    <div class="card text-center info">
-        <font size="+1"><div class="card-header"> Cotpear 帳戶服務狀態</div></font>
-        <div class="card-body">
-            <font size="+2">
-                <h5 class="card-title">歡迎您存取 Cotpear 服務狀態查詢頁面</h5>
-                <p class="card-text">
-                    目前服務尚未正式啟用(公開測試階段)<br>
-                    所有條款皆不適用，條款將與服務同時啟用<br>
-                    歡迎測試！<br></p>
-            </font>
-            <h5 class="card-title">如有疑問，請與Cotpear聯絡</h5>
-            
-	  	</div></div>
+    
+    <div class="alert alert-warning status" role="alert">
+		<h4 class="alert-heading">發生問題！</h4>
+		<p>系統目前處於公開測試階段，尚未正式啟用。可能含有大量錯誤。</p>
+		<hr>
+		<p class="mb-0">若想回報問題，請透過<a href="https://www.cotpear.com/p/blog-page.html" class="alert-link">連結</a>進入回報。</p><br>
+    </div>
+			
     <footer id="footer">
         <br><br><br>
-        <div class="card-footer text-center text-muted"> Cotpear© 版權所有。 </div>
+        <div class="card-footer text-center text-muted"> Cotpear© 版權所有 </div>
     </footer>
+            
     <div id="navajax"></div>
-    <script>
+<script>
         window.onerror=(e)=>{alert(e)}
         window.onload=()=>{
         $(function () {

@@ -2,5 +2,6 @@
 /* CSS Document */
 body{font-family: Noto Sans TC;}
 .info{width:95%; margin-left:2%; }
+.status{width:90%; margin-left:3%; }
 .footer,.push { height: 50px;}
 .Sidebar-css {background-color: #F5F5F5;}
