@@ -1,4 +1,4 @@
-<div class="alert alert-warning" role="alert" id="error_info"></div>
+/*<div class="alert alert-warning" role="alert" id="error_info"></div>
 
 <p id="info">請輸入密碼，以顯示HTML。<br><span style="color:red;">請注意：在編輯模式中修改完畢後，不得再切換模式，這只會讓程式再次解碼而已。</span></p>
 <br>
@@ -12,8 +12,7 @@
 </div>
 <hr id="hr_hide"/>
 <!--<button class="btn btn-outline-success btn-block" id="submitPwd" style="text-align: center;">解密</button>-->
-<br>
-<script charset="big5">
+<br>*/
 $(() => {
     $('#error_info').hide()
     $('#result_copy').hide()
@@ -132,8 +131,8 @@ $(() => {
         }, 500)
     })
 })
-</script>
-
+/*
 <textarea rows="6" class="form-control h-100" id="result_copy" onclick="select();document.execCommand('copy');alert('已複製');" readonly=""></textarea>
 <textarea rows="18" class="form-control " id="result_edit"></textarea>
+*/
 
