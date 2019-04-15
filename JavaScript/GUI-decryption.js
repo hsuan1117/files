@@ -59,6 +59,9 @@ $(() => {
         setTimeout(() => {
             if ($("#result").html() == "") {
                 //alert('密碼錯誤')
+                document.getElementById("error_info").className = "alert alert-warning";
+                document.getElementById("error_info").setAttribute("class","alert alert-warning");
+                document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
                 $("#error_info").show()
                 $("#info").hide()
                 $('#result_copy').hide()
@@ -68,10 +71,6 @@ $(() => {
                 del.classList.remove("active");
                 var del = document.getElementById("submit_copy-mode");
                 del.classList.remove("active");
-                //document.getElementById("error_info").className = "alert alert-warning";
-                //document.getElementById("error_info").setAttribute("class","alert alert-warning");
-                //document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
-                
             }
         }, 500)
     })
@@ -99,6 +98,9 @@ $(() => {
 
         } catch (e) {
             //alert('密碼錯誤')
+            document.getElementById("error_info").className = "alert alert-warning";
+            document.getElementById("error_info").setAttribute("class","alert alert-warning");
+            document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
             $("#error_info").show()
             $("#info").hide()
             $('#result_copy').hide()
@@ -108,13 +110,13 @@ $(() => {
             del.classList.remove("active");
             var del = document.getElementById("submit_copy-mode");
             del.classList.remove("active");
-            document.getElementById("error_info").className = "alert alert-warning";
-            document.getElementById("error_info").setAttribute("class","alert alert-warning");
-            document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
         }
         setTimeout(() => {
             if ($("#result").html() == "") {
                 //alert('密碼錯誤')
+               document.getElementById("error_info").className = "alert alert-warning";
+                document.getElementById("error_info").setAttribute("class","alert alert-warning");
+                document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
                 $("#error_info").show()
                 $("#info").hide()
                 $('#result_copy').hide()
@@ -124,9 +126,6 @@ $(() => {
                 del.classList.remove("active");
                 var del = document.getElementById("submit_copy-mode");
                 del.classList.remove("active");
-                document.getElementById("error_info").className = "alert alert-warning";
-                document.getElementById("error_info").setAttribute("class","alert alert-warning");
-                document.getElementById('error_info').innerText='您所輸入的密碼錯誤'
             }
         }, 500)
     })
