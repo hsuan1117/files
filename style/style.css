@@ -5,3 +5,4 @@ body{font-family: Noto Sans TC;}
 .status{width:90%; margin-left:3%; }
 .footer,.push { height: 50px;}
 .Sidebar-css {background-color: #F5F5F5;}
+.site_title { font-family: 'Righteous', 'Noto Sans TC' !important;}
