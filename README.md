@@ -1,3 +1,7 @@
+# 這個專案已封存，如果有任何問題，請使用`Messenger`或`表單`聯絡我們
+
+# 網址：https://www.cotpear.com/p/blog-page.html
+
 歡迎來到 Cotpear Pages 專案頁面！[![blog](https://img.shields.io/badge/Home(Blog)-View-%2345a1fc.svg?style=popout-square)](https://www.cotpear.com)
 =================================
 
